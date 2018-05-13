@@ -239,7 +239,7 @@ void AVDECC::Init()
 	data.IdentifyControlIndex = 0;  data.Changed.f.IdentifyControlIndex = 1;
 	data.InterfaceIndex = 0;  data.Changed.f.InterfaceIndex = 1;
 
-	reannounceTimer.SetTimeout(AVDECC_ADP_ANN_DEFAULT_VALIDTIME* AVDECC_ADP_VALIDTIME_INCREMENT); //n*2 sec in ms
+	reannounceTimer.SetTimeout(AVDECC_ADP_ANN_DEFAULT_VALIDTIME* AVDECC_ADP_VALIDTIME_INCREMENT - AVDECC_ADP_VALIDTIME_ADDITIONAL_TIME); //n*2 sec in ms
 	needsAdvertise = true;
 	wasAdvertised = false;
 	needsDepart = false;
@@ -370,12 +370,18 @@ int AVDECC::rcvpacket(const struct pcap_pkthdr *header, const pkt_eth2_header_p 
 	switch(p->MessageType){
 		case AVDECC_ADP_MSGTYPE_ENTITY_DEPARTING:
 			endpoints[id].Valid = false;
+			epTimer[id].Fire();
 			printf("DEPART %016llx: \n", pData->EntityId);
 		break;
 		case AVDECC_ADP_MSGTYPE_ENTITY_AVAILABLE:
 			endpoints[id].Valid = true;
 			if (hit)
+			{
+				for (int i = 0; i < endpointsnum; i++) {
+					printf("%02i %c %i %i |", epTimer[i].GetTime()/1000, endpoints[i].Valid?'V':'-', endpoints[i].TalkerStreamSources, endpoints[i].ListenerStreamSinks);
+				}
 				printf("AVAILABLE %016llx: \n", pData->EntityId);
+			}
 			else
 				printf("AVAILABLE %016llx: (NEW)\n", pData->EntityId);
 		break;

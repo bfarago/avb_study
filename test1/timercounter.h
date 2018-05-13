@@ -9,6 +9,8 @@ public:
 	void Fire();
 	bool ProcessElapsed(int deltaStep);
 	void SetTimeout(int maxStep);
+	int GetTime()const { return Time; }
+	int GetTimeout()const { return Timeout; }
 private:
 	int Timeout;
 	int Time;
