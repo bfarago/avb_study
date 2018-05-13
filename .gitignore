@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+
+
+#visual studio specific
+Debug/
+.vs/
+*.pdb
