@@ -494,12 +494,14 @@ void AVDECC::SetLinkUp(int aDevId, bool newState)
 	isLinkUp = newState;
 	EthIf* pEth = EthIf::GetInstance();
 	EthDev* pEthDev = pEth->GetHdl(0);
-	if (isLinkUp) {
-		pEthDev->rx1722 = this;
-		Reannounce();
-	}
-	else {
-		pEthDev->rx1722 = NULL; //TODO: ?
+	if (pEthDev) {
+		if (isLinkUp) {
+			pEthDev->rx1722 = this;
+			Reannounce();
+		}
+		else {
+			pEthDev->rx1722 = NULL; //TODO: ?
+		}
 	}
 }
 void AVDECC::Reannounce()
