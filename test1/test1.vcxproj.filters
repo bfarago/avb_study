@@ -18,60 +18,60 @@
     <ClCompile Include="test1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SockIF.cpp">
+    <ClCompile Include="sockif.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SockWin.cpp">
+    <ClCompile Include="sockwin.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SockPcap.cpp">
+    <ClCompile Include="sockpcap.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Pdu.cpp">
+    <ClCompile Include="pdu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="EthIf.cpp">
+    <ClCompile Include="ethif.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="AVDECC.cpp">
+    <ClCompile Include="avdecc.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="TimerCounter.cpp">
+    <ClCompile Include="timercounter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="DataUnit.cpp">
+    <ClCompile Include="dataunit.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="SockIF.h">
+    <ClInclude Include="sockif.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="SockWin.h">
+    <ClInclude Include="sockwin.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="SockPcap.h">
+    <ClInclude Include="sockpcap.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="SockCfg.h">
+    <ClInclude Include="sockcfg.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Pdu.h">
+    <ClInclude Include="pdu.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="EthIf.h">
+    <ClInclude Include="ethif.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="AVDECC.h">
+    <ClInclude Include="avdecc.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Std_Types.h">
+    <ClInclude Include="std_types.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="TimerCounter.h">
+    <ClInclude Include="timercounter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="DataUnit.h">
+    <ClInclude Include="dataunit.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="tsn_gptp.h">

@@ -3,6 +3,11 @@
 #include <pcap.h>
 #include "eth2.h"
 
+typedef enum {
+	E_OK,
+	E_Dev
+}EthIf_Result_e;
+
 #pragma pack(push,1)
 
 #pragma pack(pop)

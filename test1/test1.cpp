@@ -21,7 +21,6 @@ int main()
 {
 	printf("Init.\n");
 	int tsDelta = 100;
-	// int ts = 0;
 	g_Eth.Init();
 	g_Avdecc.Init();
 	g_Avdecc.SetLinkUp(0, true); //set interface and state 
@@ -29,7 +28,6 @@ int main()
 	printf("Started.\n");
 	while (1) {
 		Sleep(tsDelta);
-		// ts+=tsDelta;
 		g_Avdecc.Schedule(tsDelta);
 		g_Eth.MainFunctionRx();
 	}

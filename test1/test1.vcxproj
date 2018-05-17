@@ -156,31 +156,31 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="AVDECC.cpp" />
-    <ClCompile Include="DataUnit.cpp" />
-    <ClCompile Include="EthIf.cpp" />
-    <ClCompile Include="Pdu.cpp" />
-    <ClCompile Include="SockIF.cpp" />
-    <ClCompile Include="SockPcap.cpp" />
-    <ClCompile Include="SockWin.cpp" />
+    <ClCompile Include="dataunit.cpp" />
+    <ClCompile Include="avdecc.cpp" />
+    <ClCompile Include="ethif.cpp" />
+    <ClCompile Include="pdu.cpp" />
+    <ClCompile Include="sockif.cpp" />
+    <ClCompile Include="sockpcap.cpp" />
+    <ClCompile Include="sockwin.cpp" />
     <ClCompile Include="test1.cpp" />
-    <ClCompile Include="TimerCounter.cpp" />
+    <ClCompile Include="timercounter.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="acmp.h" />
-    <ClInclude Include="AVDECC.h" />
+    <ClInclude Include="avdecc.h" />
     <ClInclude Include="avdecc_cfg.h" />
-    <ClInclude Include="DataUnit.h" />
+    <ClInclude Include="dataunit.h" />
     <ClInclude Include="eth2.h" />
-    <ClInclude Include="EthIf.h" />
-    <ClInclude Include="Pdu.h" />
-    <ClInclude Include="SockCfg.h" />
-    <ClInclude Include="SockIF.h" />
-    <ClInclude Include="SockPcap.h" />
-    <ClInclude Include="SockWin.h" />
+    <ClInclude Include="ethif.h" />
+    <ClInclude Include="pdu.h" />
+    <ClInclude Include="sockcfg.h" />
+    <ClInclude Include="sockif.h" />
+    <ClInclude Include="sockpcap.h" />
+    <ClInclude Include="sockwin.h" />
     <ClInclude Include="srp.h" />
-    <ClInclude Include="Std_Types.h" />
-    <ClInclude Include="TimerCounter.h" />
+    <ClInclude Include="std_types.h" />
+    <ClInclude Include="timercounter.h" />
     <ClInclude Include="tsn_gptp.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
